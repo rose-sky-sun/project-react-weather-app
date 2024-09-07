@@ -10,6 +10,7 @@ export default function SearchWeather() {
     setLoad(true);
     console.log(response.data);
     setWeather({
+      city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -51,6 +52,7 @@ export default function SearchWeather() {
       <div>
         {form}
         <ul>
+          <li>{weather.city}</li>
           <li>Temperature:{weather.temperature}°C</li>
           <li>Description:{weather.description}</li>
           <li>Humidity:{weather.humidity}%</li>
