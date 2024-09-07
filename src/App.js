@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
 import SearchWeather from './SearchWeather';
+import './App.css';
+
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <header className="App-header">
           <h1>Weather<img src={logo} className="App-logo" alt="logo" />Forecast</h1>
         </header>
+        <div className='app-container'>
         <SearchWeather />
         <footer>
           <p>This project is coded with 🩷 by 
@@ -17,6 +19,7 @@ function App() {
             <a href='https://weatherforecastbyluna.netlify.app'> hosted on Netlify.</a>
           </p>
         </footer>
+        </div>
       </div>
     </div>
   );
