@@ -14,9 +14,9 @@ function App() {
         <SearchWeather />
         <footer>
           <p>This project is coded with 🩷 by 
-            <a href="https://github.com/rose-sky-sun"> LunaFreya Dragonborn </a> is 
-            <a href='https://github.com/rose-sky-sun/project-react-weather-app'> open-source on GitHub</a> and
-            <a href='https://weatherforecastbyluna.netlify.app'> hosted on Netlify.</a>
+            <a href="https://github.com/rose-sky-sun" target='_blank' rel="noreferrer"> LunaFreya Dragonborn </a> is 
+            <a href='https://github.com/rose-sky-sun/project-react-weather-app' target='_blank' rel="noreferrer"> open-source on GitHub</a> and
+            <a href='https://weatherforecastbyluna.netlify.app' target='_blank' rel="noreferrer"> hosted on Netlify.</a>
           </p>
         </footer>
         </div>

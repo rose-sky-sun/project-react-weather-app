@@ -1,8 +1,29 @@
 .SearchWeather {
     background-color: aliceblue;
     border: 2px solid pink;
+    padding: 16px;
+    border-radius: 4px;
+    margin: 5px auto 10px;
+    max-width: 600px;
 }
 
 form {
   padding-top: 1rem;
+}
+
+.SearchWeather h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.SearchWeather ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.date-n-desciption {
+    color: rgb(64, 65, 66);
+   
 }

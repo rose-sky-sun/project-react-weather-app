@@ -49,7 +49,7 @@ export default function SearchWeather() {
              />
             </div>
             <div className="col-3">
-                <button type="submit" className="btn btn-primary">Search</button>
+                <button type="submit" className="btn btn-primary w-100">Search</button>
             </div>
         </div>
       </form>

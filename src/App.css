@@ -1,6 +1,6 @@
 .App {
   margin: 0 auto;
-  
+  max-width: 600px;
 }
 
 
@@ -29,6 +29,13 @@
   background-color: aliceblue;
 }
 
+.App-header h1 {
+  margin: 0;
+}
+
+.App footer {
+  font-size: 11px;
+}
 
 @keyframes App-logo-spin {
   from {
