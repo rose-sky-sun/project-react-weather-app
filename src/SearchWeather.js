@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import "./SearchWeather.css";
+import DateFormatted from "./DateFormatted";
 import axios from "axios";
+import "./SearchWeather.css";
 
-export default function SearchWeather() {
+export default function SearchWeather(props) {
   const [city, setCity] = useState(" ");
   const [load, setLoad] = useState(false);
   const [weather, setWeather] = useState(null);
 
   function displayWeather(response) {
     setLoad(true);
-    console.log(response.data);
     setWeather({
       city: response.data.name,
-      date: "Saturday 19:49",
+      date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -64,7 +64,9 @@ export default function SearchWeather() {
         {form}
         <h1>{weather.city}</h1>
         <ul className="date-n-desciption">
-          <li>{weather.date}</li>
+          <li>
+            < DateFormatted date={weather.date} />
+          </li>
           <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row">
