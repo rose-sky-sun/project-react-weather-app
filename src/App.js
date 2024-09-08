@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import SearchWeather from './SearchWeather';
+import SearchWeather from './SearchWeather'; 
 import './App.css';
 
 
@@ -9,6 +9,7 @@ function App() {
       <div className='container'>
         <header className="App-header">
           <h1>Weather<img src={logo} className="App-logo" alt="logo" />Forecast</h1>
+          <p>Reliable weather data for any location!!</p>
         </header>
         <div className='app-container'>
         <SearchWeather />

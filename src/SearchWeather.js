@@ -12,6 +12,7 @@ export default function SearchWeather() {
     console.log(response.data);
     setWeather({
       city: response.data.name,
+      date: "Saturday 19:49",
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -63,8 +64,8 @@ export default function SearchWeather() {
         {form}
         <h1>{weather.city}</h1>
         <ul className="date-n-desciption">
-          <li>Saturday 19:49</li>
-          <li>{weather.description}</li>
+          <li>{weather.date}</li>
+          <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row">
             <div className="col-6 temp">
@@ -78,12 +79,11 @@ export default function SearchWeather() {
             <div className="col-6">
                 <ul>
                     <li>Precipitation:15%</li>
-                    <li>Humidity:{weather.humidity}%</li>
-                    <li>Wind:{weather.wind}km/h</li>
+                    <li>Humidity: {weather.humidity}%</li>
+                    <li>Wind: {weather.wind}km/h</li>
                 </ul>
              </div>
         </div>
-      
       </div>
     );
   } else {
