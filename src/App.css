@@ -35,6 +35,9 @@
 
 .App footer {
   font-size: 11px;
+  margin: 10px auto;
+  padding: 1px 10px;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

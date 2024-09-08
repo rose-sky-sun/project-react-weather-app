@@ -46,6 +46,7 @@ export default function SearchWeather() {
                 placeholder="Enter a city..."
                 onChange={updateCity}
                 className="form-control"
+                autoFocus="on"
              />
             </div>
             <div className="col-3">
@@ -66,9 +67,13 @@ export default function SearchWeather() {
           <li>{weather.description}</li>
         </ul>
         <div className="row">
-            <div className="col-6">
-                 <img src={weather.icon} alt={weather.description} /> 
-                 {weather.temperature}°C
+            <div className="col-6 temp">
+                    <img 
+                        src={weather.icon} 
+                        alt={weather.description}
+                    /> 
+                        <span className="temperature">{weather.temperature}</span>
+                        <span className="unit">°C</span>
             </div>
             <div className="col-6">
                 <ul>
