@@ -77,7 +77,7 @@ export default function SearchWeather(props) {
                         alt={weather.description}
                     /> 
                         <span className="temperature">{weather.temperature}</span>
-                        <span className="unit">°C</span>
+                        <span className="unit">°C | °F </span>
             </div>
             <div className="col-6">
                 <ul>
